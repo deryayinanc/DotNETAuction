@@ -1,0 +1,34 @@
+﻿@model IEnumerable<DotNETAuction.Models.Auction>
+
+@{
+    Layout = "~/Views/Shared/_LayoutWithSidebar.cshtml";
+    ViewBag.Title = "Index";
+}
+
+@section Sidebar{
+    This is my sidebar
+}
+
+@section Featured{
+    <section class="featured">
+        <div class="content-wrapper">
+            This is some featured content
+        </div>
+        
+    </section>
+}
+
+@section Scripts{
+    <!--- This is a comment -->
+}
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+
+@foreach (var item in Model) {
+   @Html.Partial("_AuctionTitle",item)
+}
+
+</table>

@@ -182,12 +182,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AuctionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\Auction.cs" />
+    <Compile Include="Models\AuctionsDataContext.cs" />
+    <Compile Include="Models\Bid.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -301,6 +305,12 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\Auctions\Auction.cshtml" />
+    <Content Include="Views\Auctions\Create.cshtml" />
+    <Content Include="Views\Auctions\Index.cshtml" />
+    <Content Include="Views\Auctions\_CurrentPrice.cshtml" />
+    <Content Include="Views\Shared\_AuctionTitle.cshtml" />
+    <Content Include="Views\Shared\_LayoutWithSidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
