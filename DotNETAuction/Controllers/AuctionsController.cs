@@ -14,6 +14,7 @@ namespace DotNETAuction.Controllers
         // GET: /Auctions/
 
         [AllowAnonymous]
+        [OutputCache(Duration=1)]
         public ActionResult Index()
         {
             var db = new AuctionsDataContext();
@@ -27,7 +28,7 @@ namespace DotNETAuction.Controllers
             TempData["SuccessMessage"] = "Success Achieved";
             return RedirectToAction("Index","Auctions");
         }
-
+        [OutputCache(Duration=1)]
         public ActionResult Auction(long id)
         {
 
@@ -37,6 +38,7 @@ namespace DotNETAuction.Controllers
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult Bid(Bid bid)
         {
             var db = new AuctionsDataContext();
@@ -82,7 +84,7 @@ namespace DotNETAuction.Controllers
             return Content(returnXML,"text/xml");
         }
 
-        [HttpGet]
+        [HttpGet]        
         public ActionResult Create()
         {
             var categoryList = new SelectList(new[] { "Automotive", "Electronics", "Games", "Home" });
@@ -92,6 +94,7 @@ namespace DotNETAuction.Controllers
 
         [HttpPost]
         [Authorize]
+        [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Exclude = "CurrentPrice")]Models.Auction auction)
         {
 
