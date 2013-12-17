@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETAuction", "DotNETAuct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNETAuction.Tests", "DotNETAuction.Tests\DotNETAuction.Tests.csproj", "{A8B4055E-5A0A-4623-9069-5DA1C51AD942}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MobileSite", "MobileSite\MobileSite.csproj", "{621A2459-C0F7-478B-AF15-A15848EC11B6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{9A591A5C-D441-48F7-8518-8F32C8CD5520}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{A8B4055E-5A0A-4623-9069-5DA1C51AD942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8B4055E-5A0A-4623-9069-5DA1C51AD942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8B4055E-5A0A-4623-9069-5DA1C51AD942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621A2459-C0F7-478B-AF15-A15848EC11B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621A2459-C0F7-478B-AF15-A15848EC11B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621A2459-C0F7-478B-AF15-A15848EC11B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621A2459-C0F7-478B-AF15-A15848EC11B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A591A5C-D441-48F7-8518-8F32C8CD5520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A591A5C-D441-48F7-8518-8F32C8CD5520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A591A5C-D441-48F7-8518-8F32C8CD5520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A591A5C-D441-48F7-8518-8F32C8CD5520}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
